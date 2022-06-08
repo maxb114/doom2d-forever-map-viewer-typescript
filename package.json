@@ -1,0 +1,18 @@
+{
+  "name": "doom2d-forever-map-viewer-typescript",
+  "license": "Unlicense",
+  "repository": "github:max114/doom2d-forever-map-viewer-typescript",
+  "version": "0.1.0-prototype.1",
+  "scripts": {
+    "tsc": "tsc",
+    "tsc-watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "ts-standard": "^11.0.0",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.41",
+    "jszip": "^3.10.0"
+  }
+}
