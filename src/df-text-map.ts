@@ -74,7 +74,7 @@ class DFTextParser extends chevrotain.EmbeddedActionsParser {
       { ALT: () => { const d = this.SUBRULE(this.Object); val = d } },
       { ALT: () => { const d = this.SUBRULE(this.value); val = d } }
     ])
-    return [(val !== null && val._id) ?? id1.image, val] // if val is an object and has id property, use it
+    return [(val?._id) ?? id1.image, val] // if val is an object and has id property, use it
   })
 
   private readonly TypedObject = this.RULE('TypedObject', () => {
